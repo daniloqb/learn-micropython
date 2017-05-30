@@ -1,0 +1,12 @@
+def do_connect():
+    import network
+    sta_if = network.WLAN(network.STA_IF)
+    if not sta_if.isconnected():
+        print ('connecting to network...')
+        sta_if.active(True)
+        sta_if.connect('CASA_NETWORK','8fc51f86x2')
+        while not sta_if.isconnected():
+            pass
+
+    print ('network config', sta_if.ifconfig())
+
