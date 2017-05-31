@@ -1,3 +1,5 @@
+from __future__  import print_function
+
 import socket
 
 addr_info = socket.getaddrinfo("towel.blinkenlights.nl",23)
