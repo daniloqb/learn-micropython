@@ -1,4 +1,4 @@
-#from __future__ import print_function
+from __future__ import print_function
 
 def http_get(url):
     import socket
