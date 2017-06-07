@@ -1,4 +1,3 @@
-from __future__ import print_function
 
 import machine, time
 import onewire, ds18x20
